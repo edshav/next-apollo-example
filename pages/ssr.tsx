@@ -5,10 +5,17 @@ import { initializeApollo, addApolloState } from '../lib/apolloClient';
 
 const SSRPage = () => (
   <div>
-    <Link href="/">
-      <a>Home Page</a>
-    </Link>
-
+    <nav>
+      <span>SSR Page</span>
+      &nbsp;&nbsp;&nbsp;
+      <Link href="/">
+        <a>Home Page</a>
+      </Link>
+      &nbsp;&nbsp;&nbsp;
+      <Link href="/csr">
+        <a>CSR Page</a>
+      </Link>
+    </nav>
     <Continents />
   </div>
 );
